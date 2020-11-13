@@ -1,0 +1,133 @@
+.center,
+.center-column,
+.top,
+.right,
+.bottom,
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+​ .center-column {
+  flex-direction: column;
+}
+
+@media (max-width: 960px) {
+  .desktop {
+    display: none;
+  }
+}
+@media (min-width: 960px) {
+  #burger {
+    display: none;
+  }
+}
+
+.column {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  color: black;
+}
+
+a:hover { 
+  color: rebeccapurple;
+}
+
+.ul-container {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  padding: 8px;
+  right: 40px;
+  top: 30px;
+  display: none;
+  z-index: 9000;
+  outline: 2px solid black;
+  box-shadow: 0 4px 8px 0 black;
+}
+​ .top {
+  align-items: flex-start;
+}
+.right {
+  justify-content: flex-end;
+}
+.bottom {
+  align-items: flex-end;
+}
+.left {
+  justify-content: flex-start;
+}
+​ .single-spaced,
+.single-spaced * {
+  line-height: 1;
+}
+​ .hero {
+  max-width: 1024px;
+  /* .desktop {
+		display: none;
+	} */
+}
+.navbar-image {
+  width: 50px;
+}
+​ .navbar-item {
+  display: right;
+}
+
+.navbar,
+.navbar-menu,
+.navbar-start,
+.navbar-end {
+  align-items: stretch;
+  display: flex;
+  padding: 0;
+}
+
+.navbar-menu {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.navbar-start {
+  justify-content: flex-start;
+  margin-right: auto;
+}
+.navbar-end {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+.field {
+  justify-content: center;
+  width: 400px;
+  margin: 0 auto;
+}
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+​ .hero-body {
+  margin: 50px;
+}
+.playerStats {
+  display: none;
+  width: 23%;
+  float: left;
+  padding: 30px;
+  margin: 45px;
+  background: rgb(182, 174, 238);
+  background: radial-gradient(
+    circle,
+    rgba(182, 174, 238, 1) 0%,
+    rgba(172, 168, 216, 0.984) 100%
+  );
+  outline: 2px solid black;
+  color: black;
+}
